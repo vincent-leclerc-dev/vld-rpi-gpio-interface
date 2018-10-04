@@ -30,3 +30,9 @@ world!
 
 exit : ctrl + d
 
+## usage
+ex : activate GPIO 0 for 4 seconds
+```
+$ python scriptgpio.py 17 4
+```
+The script use the BCM mode GPIO 0 = BCM 17

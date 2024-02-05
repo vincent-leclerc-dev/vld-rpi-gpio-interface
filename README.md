@@ -37,6 +37,8 @@ in terminal:
 ```
 $ pinout
 ```
+and read [the doc here](https://pinout.xyz/)
+
 #### usage with Raspberry pi 3b+
 ex : activate GPIO 0 for 4 seconds
 ```

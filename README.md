@@ -6,6 +6,8 @@ A python script to control GPIO of a Raspberry Pi 3b+ or 5
 ### Equipment
 A Raspberry Pi 3b+ or 5
 
+Enable "Remote GPIO" in Interfaces configuration
+
 ### Intall GPIO library (on Raspberry Pi 3b+ only!)
 ```
 $ sudo apt-get update
@@ -30,14 +32,19 @@ world!
 
 exit : ctrl + d
 
-## usage with Raspberry pi 3b+
+### Display GPIO list
+in terminal:
+```
+$ pinout
+```
+#### usage with Raspberry pi 3b+
 ex : activate GPIO 0 for 4 seconds
 ```
 $ python gpio-rpi3.py 0 4
 ```
 
-## usage with Raspberry pi 5
-ex : activate GPIO 0 for 2 seconds
+#### usage with Raspberry pi 5
+ex : activate GPIO 1 for 2 seconds
 ```
 $ python gpio-rpi5.py 1 2
 ```

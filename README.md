@@ -1,12 +1,12 @@
 # vld-rpi-gpio-interface
-A python script to control GPIO of a Raspberry Pi 3b+
+A python script to control GPIO of a Raspberry Pi 3b+ or 5
 
 ## prerequisite
 
 ### Equipment
-A Raspberry Pi 3b+
+A Raspberry Pi 3b+ or 5
 
-### Intall GPIO library
+### Intall GPIO library (on Raspberry Pi 3b+ only!)
 ```
 $ sudo apt-get update
 $ sudo apt-get install rpi.gpio

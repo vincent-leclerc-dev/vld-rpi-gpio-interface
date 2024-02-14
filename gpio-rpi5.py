@@ -19,7 +19,7 @@ try:
     scriptName = ntpath.basename(sys.argv[0])
 
     if len(sys.argv) != 3:
-        raise GpioException(colors.ERROR + 'Error : missing args\n' + colors.WARNING + 'Usage: python ' + scriptName + ' gpio_bcm_id execution_time_in_second '+ colors.SUCCESS +'\nex: "python ' + scriptName + ' 17 4"')
+        raise GpioException(colors.ERROR + 'Error : missing args\n' + colors.WARNING + 'Usage: python ' + scriptName + ' gpio_bcm_id execution_time_in_second '+ colors.SUCCESS +'\nex: "python ' + scriptName + ' 0 4"')
    
     gpioId = int(sys.argv[1])
     during = int(sys.argv[2])

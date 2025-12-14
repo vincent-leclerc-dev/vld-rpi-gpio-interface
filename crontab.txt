@@ -1,0 +1,1 @@
+@reboot sudo /root/vld-rpi-gpio-interface/run-server.sh > /root/vld-rpi-gpio-interface/run-server.log 2>&1

@@ -50,3 +50,6 @@ ex : activate GPIO 1 for 2 seconds
 ```
 $ python gpio-rpi5.py 1 2
 ```
+
+### usage with http
+curl -X GET "http://REPLACE_WITH_SERVER_IP:3000/gpio/activate?id=0&during=4"

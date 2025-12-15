@@ -40,7 +40,7 @@ $ pinout
 and read [the doc here](https://pinout.xyz/)
 
 
-### GPIO pins available as switch on/off (Raspberry pi 3b+)
+### GPIO pins available as switch on/off (Raspberry pi 3b+ & 5)
 
 | left | right |
 | ---- | ----- |
@@ -58,9 +58,9 @@ and read [the doc here](https://pinout.xyz/)
 
 
 #### usage with Raspberry pi 3b+
-ex : activate GPIO 0 for 4 seconds
+ex : activate GPIO 4 for 2 seconds
 ```
-$ python gpio-rpi3.py 0 4
+$ python gpio-rpi3.py 4 2
 ```
 
 #### usage with Raspberry pi 5
@@ -70,6 +70,7 @@ $ python gpio-rpi5.py 1 2
 ```
 
 ### usage with HTTP
+ex : activate GPIO 4 for 2 seconds
 ```
-curl -X GET "http://REPLACE_WITH_SERVER_IP:3000/gpio/activate?id=4&during=4"
+curl -X GET "http://REPLACE_WITH_SERVER_IP:3000/gpio/activate?id=4&during=2"
 ```

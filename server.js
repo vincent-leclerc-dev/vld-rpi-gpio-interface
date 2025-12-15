@@ -27,7 +27,7 @@ http.createServer(async (req, res) => {
 
         try {
                 const url = req.url;
-                const regex = /\/gpio\/activate\?id=(?<id>[0-9]+)&during=(?<during>[0-9]+)/gm;
+                const regex = /\/gpio\/activate\?id=(?<id>[0-9]+)&during=(?<during>[0-9]+)/;
                 const matches = url.match(regex);
                 console.log(matches);
                 if(!matches) {

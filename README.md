@@ -55,17 +55,16 @@ $ python gpio-rpi5.py 1 2
 curl -X GET "http://REPLACE_WITH_SERVER_IP:3000/gpio/activate?id=0&during=4"
 
 ### GPIO pin available as switch on/off
-
-4	
-17	
-27	
-22	23
-	  24
-	  25
-5	
-6	  12
-13	
-	  16
-26	
-
-+ any ground pin
+__________
+| 4	 |    |
+| 17 |    |
+| 27 |    |
+| 22 | 23 |
+|	 | 24 |
+|	 | 25 |
+| 5	 |    |
+| 6	 | 12 |
+| 13 |	  |
+|	 | 16 |
+| 26 |	  |
+___________

@@ -1,0 +1,227 @@
+{
+    "gpios": [
+        {
+            "name": "GPIO 4",
+            "id": 4
+        },
+        {
+            "name": "GPIO 17",
+            "id": 17
+        },
+        {
+            "name": "GPIO 27",
+            "id": 27
+        },
+        {
+            "name": "GPIO 22",
+            "id": 22
+        },
+        {
+            "name": "GPIO 23",
+            "id": 23
+        },
+        {
+            "name": "GPIO 24",
+            "id": 24
+        },
+        {
+            "name": "GPIO 25",
+            "id": 25
+        },
+        {
+            "name": "GPIO 5",
+            "id": 5
+        },
+        {
+            "name": "GPIO 6",
+            "id": 6
+        },
+        {
+            "name": "GPIO 12",
+            "id": 12
+        },
+        {
+            "name": "GPIO 13",
+            "id": 13
+        },
+        {
+            "name": "GPIO 16",
+            "id": 16
+        },
+        {
+            "name": "GPIO 26",
+            "id": 26
+        }
+    ],
+    "pumps": [
+        {
+            "name": "Pump 1",
+            "id": 1,
+            "gpio": 4
+        },
+        {
+            "name": "Pump 2",
+            "id": 2,
+            "gpio": 17
+        },
+        {
+            "name": "Pump 3",
+            "id": 3,
+            "gpio": 27
+        },
+        {
+            "name": "Pump 4",
+            "id": 4,
+            "gpio": 22
+        },
+        {
+            "name": "Pump 5",
+            "id": 5,
+            "gpio": 23
+        },
+        {
+            "name": "Pump 6",
+            "id": 6,
+            "gpio": 24
+        },
+        {
+            "name": "Pump 7",
+            "id": 7,
+            "gpio": 25
+        },
+        {
+            "name": "Pump 8",
+            "id": 8,
+            "gpio": 5
+        }
+    ],
+    "pumps-as-ingredients": [
+        {
+            "ingredient": 1,
+            "pump": 1
+        },
+        {
+            "ingredient": 2,
+            "pump": 2
+        },
+        {
+            "ingredient": 3,
+            "pump": 3
+        },
+        {
+            "ingredient": 4,
+            "pump": 4
+        },
+        {
+            "ingredient": 5,
+            "pump": 5
+        },
+        {
+            "ingredient": 6,
+            "pump": 6
+        },
+        {
+            "ingredient": 7,
+            "pump": 7
+        },
+        {
+            "ingredient": "850b9bac-5157-4884-89fb-d3eb5aba7ccb",
+            "pump": 8
+        }
+    ],
+    "ingredients": [
+        {
+            "name": "Jus d'orange",
+            "id": "1"
+        },
+        {
+            "name": "Jus d'annanas",
+            "id": "2"
+        },
+        {
+            "name": "Jus de citron",
+            "id": "3"
+        },
+        {
+            "name": "Jus de fruit de la passion",
+            "id": "4"
+        },
+        {
+            "name": "Jus de pamplemousse",
+            "id": "5"
+        },
+        {
+            "name": "Jus d'abricot",
+            "id": "6"
+        },
+        {
+            "name": "Jus de mangue",
+            "id": "7"
+        },
+        {
+            "name": "Jus de banane",
+            "id": "8"
+        },
+        {
+            "name": "Jus de pastèque",
+            "id": "850b9bac-5157-4884-89fb-d3eb5aba7ccb"
+        },
+        {
+            "name": "Limonade",
+            "id": "424aaf91-e035-4111-a210-c6ad0ac39de5"
+        },
+        {
+            "name": "Sirop de grenadine",
+            "id": "d20eade0-1c42-46d7-94d3-cfb1db2fde6c"
+        }
+    ],
+    "cocktails": [
+        {
+            "name": "Cendrillon",
+            "ingredients:": [
+                {
+                    "id": "4",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "id": "1",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "id": "2",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "id": "424aaf91-e035-4111-a210-c6ad0ac39de5",
+                    "quantity": "6",
+                    "unit": "cl"
+                },
+                {
+                    "id": "d20eade0-1c42-46d7-94d3-cfb1db2fde6c",
+                    "quantity": "1",
+                    "unit": "trait"
+                }
+            ],
+            "steps": [
+                {
+                    "order": 1,
+                    "description": "Mélanger les jus",
+                    "type": "auto"
+                },
+                {
+                    "order": 2,
+                    "description": "Ajouter de la limonade",
+                    "type": "manual"
+                },
+                {
+                    "order": 3,
+                    "description": "Ajouter de la grenadine",
+                    "type": "manual"
+                }
+            ]
+        }
+    ]
+}

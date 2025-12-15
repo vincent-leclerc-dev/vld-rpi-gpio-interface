@@ -8,9 +8,7 @@ function serverResponse(res, status=200, message='success') {
 }
 
 function activateGPIO(id, during) {
-        if(!id || !during) {
-                return 'Parameters "id" and "during" are mandatory.';
-        }
+        if(!id || !during) return 'Parameters "id" and "during" are mandatory.';
 
         const pythonProcess = spawn('/usr/bin/python', ["/root/vld-rpi-gpio-interface/gpio-rpi3.py", id, during]);
         pythonProcess.stdout.on('data', (data) => console.log('callback: ', data));
@@ -27,9 +25,8 @@ http.createServer(async (req, res) => {
 
         try {
                 const matches = req.url.match(/\/gpio\/activate\?id=(?<id>[0-9]+)&during=(?<during>[0-9]+)/);
-                if(!matches) {
-                        return serverResponse(res, 404, `Route ${req.url} was not found.`);
-                }
+                
+                if(!matches) return serverResponse(res, 404, `Route ${req.url} was not found.`);
 
                 const { id, during } = matches['groups'];
                 const message = activateGPIO(id, during);

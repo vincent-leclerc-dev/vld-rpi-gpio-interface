@@ -26,10 +26,7 @@ http.createServer(async (req, res) => {
         console.log(`input request "${req.url}" at "${(new Date()).toISOString()}"`);
 
         try {
-                const url = req.url;
-                const regex = /\/gpio\/activate\?id=(?<id>[0-9]+)&during=(?<during>[0-9]+)/;
-                const matches = url.match(regex);
-                console.log(matches);
+                const matches = req.url.match(/\/gpio\/activate\?id=(?<id>[0-9]+)&during=(?<during>[0-9]+)/);
                 if(!matches) {
                         return serverResponse(res, 404, `Route ${req.url} was not found.`);
                 }

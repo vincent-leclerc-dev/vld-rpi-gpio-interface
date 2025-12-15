@@ -54,7 +54,7 @@ $ python gpio-rpi5.py 1 2
 ### usage with http
 curl -X GET "http://REPLACE_WITH_SERVER_IP:3000/gpio/activate?id=0&during=4"
 
-### GPIO pin available as switch on/off
+### GPIO pins available as switch on/off
 
 | left | right |
 | ---- | ----- |

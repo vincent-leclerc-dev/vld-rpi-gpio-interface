@@ -5,7 +5,8 @@
   "keywords": [
     "Raspberry Pi",
     "GPIO",
-    "Connected Bar"
+    "Connected Bar",
+    "Raspibar"
   ],
   "license": "ISC",
   "scripts": {

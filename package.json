@@ -1,0 +1,33 @@
+{
+  "name": "vld-rpi-gpio-interface",
+  "version": "1.0.0",
+  "author": "Vincent Leclerc",
+  "keywords": [
+    "Raspberry Pi",
+    "GPIO",
+    "Connected Bar"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ",
+    "start": "node ./src/server.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@eslint/json": "^0.14.0",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent-leclerc-dev/vld-rpi-gpio-interface.git"
+  },
+  "homepage": "https://github.com/vincent-leclerc-dev/vld-rpi-gpio-interface#readme",
+  "bugs": {
+    "url": "https://github.com/vincent-leclerc-dev/vld-rpi-gpio-interface/issues"
+  }
+}

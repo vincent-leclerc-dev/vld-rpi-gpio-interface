@@ -1,7 +1,7 @@
 export const config = {
   PORT: 3000,
   PROTOCOL: "http",
-  HOST: "192.168.1.15",
+  HOST: "localhost",
   BASE_PATH: "/api",
 };
 

@@ -1,227 +1,355 @@
 {
-  "gpios": [
-    {
-      "name": "GPIO 4",
-      "id": 4
-    },
-    {
-      "name": "GPIO 17",
-      "id": 17
-    },
-    {
-      "name": "GPIO 27",
-      "id": 27
-    },
-    {
-      "name": "GPIO 22",
-      "id": 22
-    },
-    {
-      "name": "GPIO 23",
-      "id": 23
-    },
-    {
-      "name": "GPIO 24",
-      "id": 24
-    },
-    {
-      "name": "GPIO 25",
-      "id": 25
-    },
-    {
-      "name": "GPIO 5",
-      "id": 5
-    },
-    {
-      "name": "GPIO 6",
-      "id": 6
-    },
-    {
-      "name": "GPIO 12",
-      "id": 12
-    },
-    {
-      "name": "GPIO 13",
-      "id": 13
-    },
-    {
-      "name": "GPIO 16",
-      "id": 16
-    },
-    {
-      "name": "GPIO 26",
-      "id": 26
-    }
-  ],
-  "pumps": [
-    {
-      "name": "Pump 1",
-      "id": 1,
-      "gpio": 4
-    },
-    {
-      "name": "Pump 2",
-      "id": 2,
-      "gpio": 17
-    },
-    {
-      "name": "Pump 3",
-      "id": 3,
-      "gpio": 27
-    },
-    {
-      "name": "Pump 4",
-      "id": 4,
-      "gpio": 22
-    },
-    {
-      "name": "Pump 5",
-      "id": 5,
-      "gpio": 23
-    },
-    {
-      "name": "Pump 6",
-      "id": 6,
-      "gpio": 24
-    },
-    {
-      "name": "Pump 7",
-      "id": 7,
-      "gpio": 25
-    },
-    {
-      "name": "Pump 8",
-      "id": 8,
-      "gpio": 5
-    }
-  ],
-  "pumps-as-ingredients": [
-    {
-      "ingredient": 1,
-      "pump": 1
-    },
-    {
-      "ingredient": 2,
-      "pump": 2
-    },
-    {
-      "ingredient": 3,
-      "pump": 3
-    },
-    {
-      "ingredient": 4,
-      "pump": 4
-    },
-    {
-      "ingredient": 5,
-      "pump": 5
-    },
-    {
-      "ingredient": 6,
-      "pump": 6
-    },
-    {
-      "ingredient": 7,
-      "pump": 7
-    },
-    {
-      "ingredient": "850b9bac-5157-4884-89fb-d3eb5aba7ccb",
-      "pump": 8
-    }
-  ],
-  "ingredients": [
-    {
-      "name": "Jus d'orange",
-      "id": "1"
-    },
-    {
-      "name": "Jus d'annanas",
-      "id": "2"
-    },
-    {
-      "name": "Jus de citron",
-      "id": "3"
-    },
-    {
-      "name": "Jus de fruit de la passion",
-      "id": "4"
-    },
-    {
-      "name": "Jus de pamplemousse",
-      "id": "5"
-    },
-    {
-      "name": "Jus d'abricot",
-      "id": "6"
-    },
-    {
-      "name": "Jus de mangue",
-      "id": "7"
-    },
-    {
-      "name": "Jus de banane",
-      "id": "8"
-    },
-    {
-      "name": "Jus de pastèque",
-      "id": "850b9bac-5157-4884-89fb-d3eb5aba7ccb"
-    },
-    {
-      "name": "Limonade",
-      "id": "424aaf91-e035-4111-a210-c6ad0ac39de5"
-    },
-    {
-      "name": "Sirop de grenadine",
-      "id": "d20eade0-1c42-46d7-94d3-cfb1db2fde6c"
-    }
-  ],
-  "cocktails": [
-    {
-      "name": "Cendrillon",
-      "ingredients:": [
+    "gpios": [
         {
-          "id": "4",
-          "quantity": "3",
-          "unit": "cl"
+            "name": "GPIO 4",
+            "id": 4
         },
         {
-          "id": "1",
-          "quantity": "3",
-          "unit": "cl"
+            "name": "GPIO 17",
+            "id": 17
         },
         {
-          "id": "2",
-          "quantity": "3",
-          "unit": "cl"
+            "name": "GPIO 27",
+            "id": 27
         },
         {
-          "id": "424aaf91-e035-4111-a210-c6ad0ac39de5",
-          "quantity": "6",
-          "unit": "cl"
+            "name": "GPIO 22",
+            "id": 22
         },
         {
-          "id": "d20eade0-1c42-46d7-94d3-cfb1db2fde6c",
-          "quantity": "1",
-          "unit": "trait"
+            "name": "GPIO 23",
+            "id": 23
+        },
+        {
+            "name": "GPIO 24",
+            "id": 24
+        },
+        {
+            "name": "GPIO 25",
+            "id": 25
+        },
+        {
+            "name": "GPIO 5",
+            "id": 5
+        },
+        {
+            "name": "GPIO 6",
+            "id": 6
+        },
+        {
+            "name": "GPIO 12",
+            "id": 12
+        },
+        {
+            "name": "GPIO 13",
+            "id": 13
+        },
+        {
+            "name": "GPIO 16",
+            "id": 16
+        },
+        {
+            "name": "GPIO 26",
+            "id": 26
         }
-      ],
-      "steps": [
+    ],
+    "pumps": [
         {
-          "order": 1,
-          "description": "Mélanger les jus",
-          "type": "auto"
+            "name": "Pump 1",
+            "id": "1",
+            "gpio": 4
         },
         {
-          "order": 2,
-          "description": "Ajouter de la limonade",
-          "type": "manual"
+            "name": "Pump 2",
+            "id": "2",
+            "gpio": 17
         },
         {
-          "order": 3,
-          "description": "Ajouter de la grenadine",
-          "type": "manual"
+            "name": "Pump 3",
+            "id": "3",
+            "gpio": 27
+        },
+        {
+            "name": "Pump 4",
+            "id": "4",
+            "gpio": 22
+        },
+        {
+            "name": "Pump 5",
+            "id": "5",
+            "gpio": 23
+        },
+        {
+            "name": "Pump 6",
+            "id": "6",
+            "gpio": 24
+        },
+        {
+            "name": "Pump 7",
+            "id": "7",
+            "gpio": 25
+        },
+        {
+            "name": "Pump 8",
+            "id": "8",
+            "gpio": 5
         }
-      ]
-    }
-  ]
+    ],
+    "ingredients": [
+        {
+            "id": "be343dad-bb1b-430e-a651-baeaf18b6704",
+            "name": "Jus d'orange"
+        },
+        {
+            "id": "572c3f93-0049-4006-a770-1ae1fc821632",
+            "name": "Jus de cranberry"
+        },
+        {
+            "id": "2725aa82-f1a7-4d7f-9f59-940fd28d28e7",
+            "name": "Ginger Ale"
+        },
+        {
+            "id": "88b2f7b4-9604-4e10-8e08-48ff26a28997",
+            "name": "Lait de coco"
+        },
+        {
+            "id": "507da402-1e7e-4348-89a6-55cc46e5463f",
+            "name": "Crème de coco"
+        },
+        {
+            "id": "e32b4acb-3a6f-413b-9a9c-336a4bb3fabd",
+            "name": "Eau pétillante"
+        },
+        {
+            "id": "061a81f3-726d-4afa-98b9-0c2e8f0e12c3",
+            "name": "Sirop de grenadine"
+        },
+        {
+            "id": "e0ae83b2-6af3-482c-8ac6-6c2ffcff7995",
+            "name": "Jus d'annanas"
+        },
+        {
+            "id": "a634d13b-191c-4377-a53d-2021bcd91ef5",
+            "name": "Jus de citron"
+        },
+        {
+            "id": "11072731-debf-4896-ae5f-739e319248ce",
+            "name": "Jus de mangue"
+        },
+        {
+            "id": "acc75ae3-6a46-4f1b-8715-00726bb92ec4",
+            "name": "Jus de pomme"
+        }
+    ],
+    "pumps-as-ingredients": [
+        {
+            "ingredientId": "be343dad-bb1b-430e-a651-baeaf18b6704",
+            "pumpId": "1"
+        },
+        {
+            "ingredientId": "572c3f93-0049-4006-a770-1ae1fc821632",
+            "pumpId": "2"
+        },
+        {
+            "ingredientId": "e0ae83b2-6af3-482c-8ac6-6c2ffcff7995",
+            "pumpId": "3"
+        },
+        {
+            "ingredientId": "11072731-debf-4896-ae5f-739e319248ce",
+            "pumpId": "4"
+        },
+        {
+            "ingredientId": "a634d13b-191c-4377-a53d-2021bcd91ef5",
+            "pumpId": "5"
+        },
+        {
+            "ingredientId": "acc75ae3-6a46-4f1b-8715-00726bb92ec4",
+            "pumpId": "6"
+        },
+        {
+            "ingredientId": "7",
+            "pumpId": "7"
+        },
+        {
+            "ingredientId": "850b9bac-5157-4884-89fb-d3eb5aba7ccb",
+            "pumpId": "8"
+        }
+    ],
+    "recipes": [
+        {
+            "id": "d8bc7d85-f184-45bd-934d-80f09561eeba",
+            "name": "Christmas Punch",
+            "ingredients": [
+                {
+                    "ingredientId": "be343dad-bb1b-430e-a651-baeaf18b6704",
+                    "quantity": "6",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "2",
+                    "quantity": "4",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "572c3f93-0049-4006-a770-1ae1fc821632",
+                    "quantity": "4",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "2725aa82-f1a7-4d7f-9f59-940fd28d28e7",
+                    "quantity": "10",
+                    "unit": "cl"
+                }
+            ],
+            "steps": [
+                {
+                    "stepNum": 1,
+                    "name": "Etape 1",
+                    "description": "Mélanger les jus."
+                }
+            ]
+        },
+        {
+            "id": "1f06de15-7fef-4c18-97e2-eac90483b127",
+            "name": "Virgin Piña Colada",
+            "ingredients": [
+                {
+                    "ingredientId": "2",
+                    "quantity": "12",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "88b2f7b4-9604-4e10-8e08-48ff26a28997",
+                    "quantity": "6",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "507da402-1e7e-4348-89a6-55cc46e5463f",
+                    "quantity": "4",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        },
+        {
+            "id": "7bda959f-03c2-4935-b3f9-a61c4d46b8f6",
+            "name": "Virgin Cosmopolitan ",
+            "ingredients": [
+                {
+                    "ingredientId": "572c3f93-0049-4006-a770-1ae1fc821632",
+                    "quantity": "9",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "3",
+                    "quantity": "4",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "be343dad-bb1b-430e-a651-baeaf18b6704",
+                    "quantity": "4",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        },
+        {
+            "id": "df98680b-610e-47ac-a388-21fe89fde525",
+            "name": "Ananas Sureau Fizz",
+            "ingredients": [
+                {
+                    "ingredientId": "2",
+                    "quantity": "12",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "3",
+                    "quantity": "6",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "e32b4acb-3a6f-413b-9a9c-336a4bb3fabd",
+                    "quantity": "8",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        },
+        {
+            "id": "b3e52a23-a11d-46be-9f3d-7c29fdd88fba",
+            "name": "Afterglow",
+            "ingredients": [
+                {
+                    "ingredientId": "2",
+                    "quantity": "8",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "be343dad-bb1b-430e-a651-baeaf18b6704",
+                    "quantity": "8",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "061a81f3-726d-4afa-98b9-0c2e8f0e12c3",
+                    "quantity": "2",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        },
+        {
+            "id": "a8fa8d5a-f0d2-480d-aae3-e76edad2ff68",
+            "name": "Cendrillon",
+            "ingredients": [
+                {
+                    "ingredientId": "be343dad-bb1b-430e-a651-baeaf18b6704",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "2",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "3",
+                    "quantity": "3",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "424aaf91-e035-4111-a210-c6ad0ac39de5",
+                    "quantity": "6",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "061a81f3-726d-4afa-98b9-0c2e8f0e12c3",
+                    "quantity": "1",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        },
+        {
+            "id": "af906c1a-e5e4-453b-9d0e-cae14728c6b0",
+            "name": "Virgin Bora Bora",
+            "ingredients": [
+                {
+                    "ingredientId": "2",
+                    "quantity": "1.8",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "3",
+                    "quantity": "0.3",
+                    "unit": "cl"
+                },
+                {
+                    "ingredientId": "1f07907c-aeda-4804-a2de-250d6e008422",
+                    "quantity": "1",
+                    "unit": "cl"
+                }
+            ],
+            "steps": []
+        }
+    ]
 }

@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 
-export const configFileName = "./config.json";
+export const configFileName = "src/config/config.json";
 
 export function updateConfig(data) {
   if (!data) return;
